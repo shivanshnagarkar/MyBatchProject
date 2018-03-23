@@ -1,4 +1,4 @@
-package java;
+package code;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
@@ -16,8 +16,7 @@ public class MyApp {
 			"spring/batch/jobs/job-report.xml" 
 		};
 		
-	ApplicationContext context = 
-		new ClassPathXmlApplicationContext(springConfig);
+	ApplicationContext context =new ClassPathXmlApplicationContext(springConfig);
 		
 	JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
 	Job job = (Job) context.getBean("reportJob");
@@ -29,6 +28,7 @@ public class MyApp {
 
 	} catch (Exception e) {
 		e.printStackTrace();
+	
 	}
 
 	System.out.println("Done");
