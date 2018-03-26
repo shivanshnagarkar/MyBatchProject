@@ -11,9 +11,9 @@ public class MyApp {
   public static void main(String[] args) {
 	System.out.println("*************8");
 	String[] springConfig  = 
-		{	"spring/batch/config/database.xml", 
-			"spring/batch/config/context.xml",
-			"spring/batch/jobs/job-report.xml" 
+		{	"src/config/database.xml", 
+			"src/config/context.xml",
+			"src/config/job.xml" 
 		};
 		
 	ApplicationContext context =new ClassPathXmlApplicationContext(springConfig);
