@@ -8,7 +8,7 @@
 	http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
-  <bean id="report" class="com.mkyong.model.Report" scope="prototype" />
+  <bean id="report" class="com.report" scope="prototype" />
     
   <batch:job id="reportJob">
 	<batch:step id="step1">
