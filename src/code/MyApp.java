@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyApp {
   public static void main(String[] args) {
-
+	System.out.println("*************8");
 	String[] springConfig  = 
 		{	"spring/batch/config/database.xml", 
 			"spring/batch/config/context.xml",
@@ -24,14 +24,13 @@ public class MyApp {
 	try {
 
 		JobExecution execution = jobLauncher.run(job, new JobParameters());
-		System.out.println("Exit Status : " + execution.getStatus());
-
+		
 	} catch (Exception e) {
 		e.printStackTrace();
 	
 	}
 
-	System.out.println("Done");
+	System.out.println("**********finished");
 
   }
 }
